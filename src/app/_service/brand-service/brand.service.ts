@@ -3,18 +3,15 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BrandService {
-
   url = 'http://localhost:8084/api/v1/brand';
 
-constructor(
-  private httpClient: HttpClient
-) { }
+  constructor(private httpClient: HttpClient) {}
 
-getAllBrand():Observable<any>{
-  return this.httpClient.get(this.url + "/list-brand" );
-}
-
+  getAllBrand(): Observable<any> {
+    return this.httpClient.get(this.url + '/list-brand');
+  }
+  // list danh sach nhan
 }

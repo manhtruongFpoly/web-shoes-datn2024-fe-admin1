@@ -58,7 +58,7 @@ export class CategoryService {
       { params: param }
     );
   }
-
+// delete theo id
   deleteCategory(id: number): Observable<any> {
     return this.httpClient.delete(this.url + '/delete/' + id);
   }
