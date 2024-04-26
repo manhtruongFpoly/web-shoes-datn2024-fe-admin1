@@ -25,15 +25,6 @@ import { BuyOfflineComponent } from './component/Buy-offline/buy-offline/buy-off
 import { AuthInterceptor } from './_helper/auth.interceptor';
 import { GhnInterceptor } from './_helper/ghn.interceptor';
 import { ModalSearchListProductComponent } from './component/Buy-offline/buy-offline/modal-search-list-product/modal-search-list-product.component';
-import { CancelDialogComponent } from './component/Oder/cancel-dialog/cancel-dialog.component';
-import { EditAddessComponent } from './component/Oder/edit-addess/edit-addess.component';
-import { EditOrderComponent } from './component/Oder/edit-order/edit-order.component';
-import { EditShipNameComponent } from './component/Oder/edit-ship-name/edit-ship-name.component';
-import { InfoOrderComponent } from './component/Oder/info-order/info-order.component';
-import { ListAllOrderComponent } from './component/Oder/list-all-order/list-all-order.component';
-import { ListOrderComponent } from './component/Oder/list-order/list-order.component';
-import { ListOrdersComponent } from './component/Oder/list-orders/list-orders.component';
-import { OrderInfoComponent } from './component/Oder/order-info/order-info.component';
 
 import { MatSortModule } from '@angular/material/sort';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -74,16 +65,6 @@ import { StatisticalComponent } from './component/statistical/statistical.compon
     // BuyOfflineTestComponent,
     BuyOfflineComponent,
     ModalSearchListProductComponent,
-
-    CancelDialogComponent,
-    EditAddessComponent,
-    EditOrderComponent,
-    EditShipNameComponent,
-    InfoOrderComponent,
-    ListAllOrderComponent,
-    ListOrderComponent,
-    ListOrdersComponent,
-    OrderInfoComponent,
     StatisticalComponent
   ],
   imports: [
