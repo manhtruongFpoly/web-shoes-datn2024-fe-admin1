@@ -75,7 +75,7 @@ export class ProductService {
   getOne(id: number): Observable<any> {
     return this.http.get(AUTH_API + '/get-one/' + id);
   }
-
+  // lay sp va tim kiem
   getAllProductsAndSearch(
     name: any,
     page: number,
@@ -124,7 +124,7 @@ export class ProductService {
         pageNumber
     );
   }
-
+  // lay het sp
   getAllProduct(page: number, pageNumber: number): Observable<any> {
     return this.http.get(
       AUTH_API + '?page=' + page + '&page-size=' + pageNumber

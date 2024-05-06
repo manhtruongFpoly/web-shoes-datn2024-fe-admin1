@@ -4,32 +4,33 @@ import { Observable } from 'rxjs';
 import { CartModel } from '../_model/CartModel';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CartService {
+  url = 'http://localhost:8080/api/v1/cart';
 
-  url = "http://localhost:8080/api/v1/cart";
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getAllCartByUser(): Observable<any> {
-      return this.http.get(this.url + "/user");
+    return this.http.get(this.url + '/user');
   }
-
+  /**tinh tong */
   getSumTotal(): Observable<any> {
-    return this.http.get(this.url + "/sumTotalAndQuantity")
+    return this.http.get(this.url + '/sumTotalAndQuantity');
   }
 
   createCart(cart: CartModel): Observable<any> {
-    return this.http.post(this.url + "/addToCart", cart);
+    return this.http.post(this.url + '/addToCart', cart);
   }
 
   updateCart(id: number, cart: CartModel): Observable<any> {
-    return this.http.put(this.url + "/updateQuantity/" + id + '?quantity=' + cart.quantity, cart);
+    return this.http.put(
+      this.url + '/updateQuantity/' + id + '?quantity=' + cart.quantity,
+      cart
+    );
   }
 
   deleteCart(id: number): Observable<any> {
-    return this.http.delete(this.url + "/" + id);
+    return this.http.delete(this.url + '/' + id);
   }
-
 }
