@@ -1,4 +1,3 @@
-import { data } from 'jquery';
 import { ToastrService } from 'ngx-toastr';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';

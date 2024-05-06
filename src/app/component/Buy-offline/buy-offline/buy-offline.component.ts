@@ -509,7 +509,7 @@ export class BuyOfflineComponent implements OnInit {
         this.toast.error(error.message)
       }
       this.isLoading = false;
-      this.toast.error('Bạn chưa chọn san pham');
+      this.toast.error('Bạn chưa chọn sản phẩm');
 
       // console.log(error);
       // this.isLoading = false;
