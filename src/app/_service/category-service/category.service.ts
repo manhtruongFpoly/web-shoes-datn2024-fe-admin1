@@ -36,7 +36,7 @@ export class CategoryService {
 
     return this.httpClient.put(this.url + '/update/' + id, formData);
   }
-
+// lấy 1
   getOne(id: number): Observable<any> {
     return this.httpClient.get(this.url + '/' + id);
   }
@@ -44,7 +44,7 @@ export class CategoryService {
   getAllGroupcomponent(): Observable<any> {
     return this.httpClient.get(this.url_groupComponent + '/info');
   }
-
+// lấy thể loại
   getAllCategoryAndPage(params: any): Observable<any> {
     return this.httpClient.get(this.url, { params });
   }
